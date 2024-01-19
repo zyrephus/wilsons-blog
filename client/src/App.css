@@ -56,6 +56,11 @@ div.post p.info {
   gap: 10px;
 }
 
-div.post p.info a.author {
+div.post p.info span.author {
   color: #333;
+}
+
+div.post p.summary {
+  margin: 10px 0;
+  line-height: 1.4rem;
 }
