@@ -82,7 +82,7 @@ const Navbar = () => {
                         value="login"
                         icon={<LoginIcon />}
                         component={Link}
-                        to="/sign-up"
+                        to="/login"
                     />
                 </BottomNavigation>
             </ThemeProvider>
