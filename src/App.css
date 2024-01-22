@@ -1,7 +1,21 @@
 body {
-    background-color: rgb(38, 38, 38);
+    background: linear-gradient(rgb(61, 61, 61), rgb(29, 29, 29));
+    min-height: 100vh;
 }
 
 h1 {
     color: white;
+}
+
+#loginBox {
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 400px;
+    height: 250px;
+    border: 2px solid #B16CFF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgb(34, 34, 34);
+    background: rgb(19, 19, 19);
 }
