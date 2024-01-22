@@ -10,6 +10,12 @@ const Login = () => {
     const [username, setUsername] = useState(''); // State for username
     const [password, setPassword] = useState(''); // State for password
     
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("Username:", username);
+        console.log("Password:", password);
+    };
+
     return (
         <>
             <div id="loginBox">
@@ -25,7 +31,7 @@ const Login = () => {
                         '& .MuiOutlinedInput-root': {
                             '& fieldset': {
                                 borderColor: 'white', // Color of the border
-                                borderWidth: '2px',
+                                borderWidth: '1px',
                             },
                             '&:hover fieldset': {
                                 borderColor: 'orange', // Color of the border on hover
@@ -41,20 +47,21 @@ const Login = () => {
                     component="form"
                     noValidate
                     autoComplete="off"
+                    onSubmit={handleSubmit}
                 >
                     <h2 id="loginHeader">Login</h2>
                     <TextField
                         id="outlined-username"
                         label="Username"
-                        value={username}
                         onChange={(event) => setUsername(event.target.value)}
+                        value={username}
                     />
                     <TextField
                         id="outlined-password"
                         label="Password"
                         type="password"
-                        value={password}
                         onChange={(event) => setPassword(event.target.value)}
+                        value={password}
                     />
                     <Stack
                         spacing={2}
@@ -66,6 +73,7 @@ const Login = () => {
                         }}
                     >
                         <Button 
+                            type="submit"
                             variant="contained"
                             sx={{
                                 backgroundColor: 'orange', // Background color for the normal state
