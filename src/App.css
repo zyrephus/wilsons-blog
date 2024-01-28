@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(255, 255, 255), rgb(199, 199, 199));
+    background: white;
     min-height: 100vh;
 }
 
@@ -8,13 +8,17 @@ h1 {
 }
 
 #navbar {
-    background-color: #333; /* Dark gray background */
-    padding: 10px;          /* Padding around the content */
-    text-align: center;     /* Center-align text */
-    border-bottom: 2px solid #666; /* Bottom border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    width: auto;
+    height: 65px;
+    border-bottom: 5px solid #be32ff; /* Bottom border */
 }
 
 #navbar a {
+    margin-right: 40px;
     text-decoration: none;
     color: rgb(255, 255, 255); 
 }
