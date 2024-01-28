@@ -21,12 +21,11 @@ a {
     justify-content: space-around;
     height: 8vh;
     background: rgb(0, 0, 0);
-    padding: 0 10px; /* Padding of the sides */
 }
 .home-link {
     text-transform: uppercase;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 ul {
     display: flex;
@@ -36,4 +35,25 @@ ul {
 }
 .main-links {
     color: rgb(177, 177, 177);
+    position: relative; /* Needed to position the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element doesn't extend beyond the link */
+}
+.main-links:hover {
+    color: white; /* New color on hover */
+}
+
+.main-links::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    bottom: -5px; /* Positioning of the underline */
+    left: 50%;
+    background-color: white; /* Color of the underline */
+    transition: width 0.5s ease, left 0.5s ease; /* Animation time */
+}
+
+.main-links:hover::after {
+    width: 100%;
+    left: 0;
 }
