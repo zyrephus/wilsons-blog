@@ -6,25 +6,3 @@ body {
 h1 {
     color: black;
 }
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1e1e1e;
-    width: auto;
-    height: 65px;
-    border-bottom: 5px solid #be32ff; /* Bottom border */
-}
-
-.home-link {
-    margin-right: 40px;
-    text-decoration: none;
-    color: rgb(255, 255, 255); 
-}
-
-.main-links {
-    margin-right: 40px;
-    text-decoration: none;
-    color: rgb(255, 255, 255); 
-}

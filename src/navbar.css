@@ -1,0 +1,39 @@
+*,*::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background: rgb(0, 0, 0);
+    padding: 0 10px; /* Padding of the sides */
+}
+.home-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+ul {
+    display: flex;
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* This removes default padding */
+    gap: 5rem;
+}
+.main-links {
+    color: rgb(177, 177, 177);
+}
