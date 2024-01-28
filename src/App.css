@@ -7,7 +7,7 @@ h1 {
     color: black;
 }
 
-#navbar {
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,13 @@ h1 {
     border-bottom: 5px solid #be32ff; /* Bottom border */
 }
 
-#navbar a {
+.home-link {
+    margin-right: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+}
+
+.main-links {
     margin-right: 40px;
     text-decoration: none;
     color: rgb(255, 255, 255); 

@@ -4,12 +4,13 @@ import '../../App.css';
  
 const Navbar = () => {
     return (
-        <div id="navbar">
-            <Link to="./">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/login">Login</Link>
-        </div>
+        <nav className="navbar">
+            <Link to="./" className="home-link">Wilson's Blog</Link>
+            <Link to="./blogs" className="main-links">Blogs</Link>
+            <Link to="/about" className="main-links">About</Link>
+            <Link to="/contact" className="main-links">Contact</Link>
+            <Link to="/login" className="main-links">Login</Link>
+        </nav>
     );
 };
  
