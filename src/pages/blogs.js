@@ -6,6 +6,11 @@ const Blogs = () => {
         <div>
             <h1>Welcome to the Blog Page</h1>
             <Post></Post>
+            <Post></Post>
+            <Post></Post>
+            <Post></Post>
+            <Post></Post>
+            <Post></Post>
         </div>
     );
 };

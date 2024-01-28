@@ -1,0 +1,8 @@
+.post {
+    margin: 25px 25px;
+    padding: 10px 10px;
+    background-color: rgb(237, 237, 237);
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    line-height: 2;
+}
