@@ -11,6 +11,7 @@ function Navbar(props) {
                 <li><Link to="/about" className="main-links">About</Link></li>
                 <li><Link to="/contact" className="main-links">Contact</Link></li>
                 <li><Link to="/login" className="main-links">Login</Link></li>
+                <li><Link to="/register" className="main-links">Register</Link></li>
             </ul>
         </nav>
     );
