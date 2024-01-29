@@ -7,11 +7,16 @@ const Register = () => {
     
     async function handleSubmit(event) {
         event.preventDefault();
-        await fetch('http://localhost:4000/register', {
-            method: 'POST',
-            body: JSON.stringify({username, password}),
-            headers: {'Content-Type':'application/json'},
-        })
+        try {
+            await fetch('http://localhost:4000/register', {
+                method: 'POST',
+                body: JSON.stringify({username, password}),
+                headers: {'Content-Type':'application/json'},
+            })
+        }
+        catch (e) {
+            alert('Registration failed.');
+        }
     };
 
     return (
