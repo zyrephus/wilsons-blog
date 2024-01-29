@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages";
 import Blogs from "./pages/blogs";
+import readBlog from "./pages/readBlog";
 import About from "./pages/about";
 import Login from "./pages/login";
 import Contact from "./pages/contact";
@@ -28,5 +29,3 @@ function App() {
 }
  
 export default App;
-
-//%BlackDragon73

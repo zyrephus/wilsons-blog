@@ -1,3 +1,7 @@
+html {
+    width: 100vw;
+}
+
 body {
     background: white;
     min-height: 100vh;
@@ -7,4 +11,57 @@ h1 {
     color: black;
     padding-left: 10px;
     padding-top: 10px;
+}
+
+/* Center the login container horizontally and vertically */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Allow the container to adjust its height based on content */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for the form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for form input fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the login button */
+.login-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
 }
