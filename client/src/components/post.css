@@ -4,8 +4,12 @@
     background-color: rgb(237, 237, 237);
     border: 2px solid darkgray;
     border-radius: 10px;
-    line-height: 2;
 }
 .date {
     color: rgb(90, 90, 90);
+    padding: 5px 0 15px 0;
+}
+
+.description {
+    padding-bottom: 10px;
 }

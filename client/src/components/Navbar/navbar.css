@@ -22,6 +22,11 @@ a {
     height: 8vh;
     background: rgb(0, 0, 0);
 }
+
+nav li {
+    align-self: center;
+}
+
 .home-link {
     text-transform: uppercase;
     font-weight: bold;
@@ -56,4 +61,12 @@ ul {
 .main-links:hover::after {
     width: 100%;
     left: 0;
+}
+
+.search-bar {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    width: 200px;
 }

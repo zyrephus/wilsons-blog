@@ -38,7 +38,7 @@ const Register = () => {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
-                <button>Register</button>
+                <button className="login">Register</button>
             </form>
         </div>
     );

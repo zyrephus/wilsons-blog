@@ -18,7 +18,7 @@ const Post = () => {
                 </p>
             </div>
             <Stack spacing={2} direction="row">
-                <Link to="/blogs/blog-title">
+                <Link to="/blog/read-blog">
                     <Button variant="contained" sx={{ width: '125px', height: '40px', fontSize: '12px'}}>
                         READ MORE
                     </Button>
