@@ -13,55 +13,53 @@ h1 {
     padding-top: 10px;
 }
 
-/* Center the login container horizontally and vertically */
+/* login.js */
 .login-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* Allow the container to adjust its height based on content */
-    background-color: #f4f4f4;
+    border: 2px solid darkgray;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px;
+    width: 350px; /* Fixed width for consistency */
+    background-color: rgb(237, 237, 237); /* White background */
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    text-align: left; /* Center align the text */
 }
 
-/* Styling for the form */
-.login-form {
-    display: flex;
-    flex-direction: column;
+.login-container h1 {
+    text-align: center; /* Center align only the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
 }
 
-/* Styling for form input fields */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Spacing between form groups */
 }
 
-label {
-    font-weight: bold;
+.form-group label {
+    display: block; /* Make the label a block element */
+    margin-bottom: 10px; /* Spacing between label and input */
 }
 
-input[type="text"],
-input[type="password"] {
+.form-group input {
+    width: 100%; /* Full width */
+    padding: 8px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Styling for the login button */
-.login-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
     border: none;
-    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 16px;
 }
 
-.login-button:hover {
-    background-color: #0056b3;
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
