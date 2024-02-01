@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken');
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asdfjp9awo4tj9348qjfapsiuo-';
 
-app.use(cors());
+app.use(cors({credentials:true,origin:'http://localhost:3000'}));
 app.use(express.json());
 
 mongoose.connect('mongodb+srv://admin:%25BlackDragon73@cluster0.thlymdf.mongodb.net/?retryWrites=true&w=majority');
@@ -37,7 +37,7 @@ app.post('/login', async (req, res) => {
         // Logged in
         jwt.sign({username, id:userDoc._id}, secret, {}, (err, token) => {
             if(err) throw err;
-            res.json(token);
+            res.cookie('token', token).json('ok');
         });
     }
     else {
