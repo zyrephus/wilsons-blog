@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://admin:%25BlackDragon73@cluster0.thlymdf.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(`mongodb+srv://admin:%25BlackDragon73@cluster0.thlymdf.mongodb.net/?retryWrites=true&w=majority`);
 
 const UserSchema = new mongoose.Schema({
     username: String,
@@ -31,6 +31,6 @@ app.post("/login", (req, res) => {
     })
 })
 
-app.listen(3001, () => {
+app.listen(4000, () => {
     console.log("Server is running.");
 });
