@@ -11,7 +11,6 @@ import Blogs from "./pages/blogs";
 import ReadBlog from "./pages/readBlog";
 import About from "./pages/about";
 import Login from "./pages/login";
-import Register from "./pages/register";
 import Contact from "./pages/contact";
  
 function App() {
@@ -25,7 +24,6 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
             </Routes>
         </Router>
     );

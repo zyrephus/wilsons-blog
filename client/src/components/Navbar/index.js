@@ -14,7 +14,6 @@ function Navbar(props) {
                     <input type="text" placeholder="Search..." className="search-bar"/>
                 </li>
                 <li><Link to="/login" className="main-links">Login</Link></li>
-                <li><Link to="/register" className="main-links">Register</Link></li>
             </ul>
         </nav>
     );

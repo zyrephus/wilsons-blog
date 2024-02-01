@@ -1,34 +1,22 @@
 import React, { useState } from "react";
-import {Navigate} from "react-router-dom";
 import '../App.css';
+import axios from 'axios';
  
 const Login = () => {
     const [username, setUsername] = useState(''); // State for username
     const [password, setPassword] = useState(''); // State for password
-    const [redirect, setRedirect] = useState(false);
     
-    async function login(event) {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        const respone = await fetch('http://localhost:4000/login', {
-            method: 'POST',
-            body: JSON.stringify({username, password}),
-            headers: {'Content-Type':'application/json'},
-            credentials: 'include',
-        });
-        if(respone.ok) {
-            setRedirect(true);
-        }
-        else {
-            alert("Wrong credentials.");
-        }
+        axios.post('http://localhost:3001/login', {username, password})
+        .then(result => console.log(result))
+        .catch(err => console.log(err))
     }
-    if (redirect) {
-        return <Navigate to={'/'} />
-    }
+
     return (
         <div className="login-container">
             <h1>Login</h1>
-            <form onSubmit={login}>
+            <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="username">Username</label>
                     <input
