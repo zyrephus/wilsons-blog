@@ -1,16 +1,27 @@
 import React, { useState } from "react";
 import '../App.css';
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
  
 const Login = () => {
+    const history = useNavigate();
+
     const [username, setUsername] = useState(''); // State for username
     const [password, setPassword] = useState(''); // State for password
     
-    const handleSubmit = (event) => {
+    async function handleSubmit(event) {
         event.preventDefault();
-        axios.post('http://localhost:4000/login', {username, password})
-        .then(result => console.log(result))
-        .catch(err => console.log(err))
+        try {
+            const res = await axios.post("https://localhost:4000/login", { username, password });
+            if (res.data === "exist") {
+                history("/blogs");
+            } else if (res.data === "notexist") {
+                alert("User does not exist.");
+            }
+        } catch (error) {
+            alert("Wrong password.");
+            console.log(error);
+        }
     }
 
     return (
