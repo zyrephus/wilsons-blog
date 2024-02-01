@@ -5,16 +5,19 @@ const Login = () => {
     const [username, setUsername] = useState(''); // State for username
     const [password, setPassword] = useState(''); // State for password
     
-    const handleSubmit = (event) => {
+    async function login(event) {
         event.preventDefault();
-        console.log("Username:", username);
-        console.log("Password:", password);
+        await fetch('http://localhost:4000/login', {
+            method: 'POST',
+            body: JSON.stringify({username, password}),
+            headers: {'Content-Type':'application/json'},
+        })
     };
 
     return (
         <div className="login-container">
             <h1>Login</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={login}>
                 <div className="form-group">
                     <label htmlFor="username">Username</label>
                     <input
