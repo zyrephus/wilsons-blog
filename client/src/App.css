@@ -7,10 +7,20 @@ body {
     min-height: 100vh;
 }
 
-h1 {
+/* index.js */
+
+
+/* blogs.js */
+.blogs-title {
     color: black;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 150px;
+    padding-top: 25px;
+}
+
+hr {
+    width: 80%; /* Adjust the width as needed */
+    border-bottom: 1px solid darkgray;
+    margin: 20px auto; /* Center the line */
 }
 
 /* login.js */
